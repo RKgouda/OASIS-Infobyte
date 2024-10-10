@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.signup-login {
+
+    background-color: #0f1f37;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 24px;
+    color: black;
+    font-family: Poppins;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.signup-box {
+    background-color: rgba(255, 255, 255, 0.107);
+    height: 100%;
+    width: 520px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 380px;
+    padding: 50px;
+    margin-bottom: 20px;
+            
+}
+.Todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffff00a9;
+    color: #fff;
+    padding: 0.75px 1px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+#delete{
+    color: red;
+}
+.inp{
+    height: 30px;
+    width: 350px;
+    border-radius: 10px;
+}
+.submit-button{
+    width: 70px;
+    height: 30px;
+    background-color: deepskyblue;
+    border-radius: 10px;
+}
+
+
+/* ======== UPDATE PAGE  */
+.Update-task{
+        background-color: #0f1f37;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            font-size: 24px;
+            color: black;
+            font-family: Poppins;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+}
+.update-box {
+    background-color: rgba(255, 255, 255, 0.107);
+        height: 400px;
+        width: 520px;
+        border-radius: 25px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 380px;
+        padding: 50px;
+        margin-bottom: 20px;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 600px) {
+    .signup-login {
+        padding: 15px;
+    }
+}

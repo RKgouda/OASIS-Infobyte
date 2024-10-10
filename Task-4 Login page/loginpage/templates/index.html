@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}"/>
+</head>
+<body>
+    <div class="homepage">
+    {% for  message in messages  %}
+    <div class="alert alert-{{messagetags}} alert-dismissible fade show" role="alert">
+        <strong>Message:</strong> {{message}}
+        <button type="button" class="close" data-dismiss="alert" aria-label="close">
+        <span aria-hidden='true'>&times;</span></button>
+    </div>
+    {% endfor %}
+
+    <h3>Wlcome to App</h3>
+    
+    {% if user.is_authenticated %}
+    <h3>Hello{{fname}}</h3>
+    <h4>You'are successfully logged in.</h4>
+      <button class="submit"><a href="/signout">Signout</a></button>
+    {% else %}
+    <button class="submit"><a href="/signup">Signup</a></button>
+    <button class="submit"><a href="/signin">Signin</a></button>
+    {% endif %}
+    </div>
+</body>
+</html>
