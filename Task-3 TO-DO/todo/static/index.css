@@ -160,9 +160,3 @@ a:hover {
     text-decoration: line-through;
 }
 
-/* For mobile responsiveness */
-@media (max-width: 600px) {
-    .signup-login {
-        padding: 15px;
-    }
-}
