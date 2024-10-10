@@ -1,2 +1,0 @@
-# OASIS-Infobyte
-INTERNSHIP TASK
